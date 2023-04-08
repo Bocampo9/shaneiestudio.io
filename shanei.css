@@ -2,27 +2,31 @@
 * {
   box-sizing: border-box;
 }
-
+@font-face {
+  font-family:'lintsec'; /* Elige un nombre para tu fuente */
+  src: url(fonts/lintsec_.ttf); /* Ruta a tu archivo de fuente en la carpeta de fuentes */
+  font-family: '20db';
+  src: url(fonts/20db.otf);
+}
+h3{
+  font-family: '20db', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .titulo {
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Great Vibes', 'Arial Narrow', Arial, sans-serif;
 }
 
 .bgBlack {
   background: #000;
   color: white;
-  border-top: 1px transparent rgb(73, 72, 72);
-  background-image: linear-gradient(black, rgb(22, 22, 22));
-  border-bottom: 1px solid black;
-}
-.titulo {
-    font-family: 'lintsecregular';
+  border-top: 1px solid white;
+  background-image: linear-gradient(black, rgb(48, 48, 48));
+  
 }
 
 .navTitulo {
-  font-family: "Abril+Fatface";
   font-size: 20px;
-  
+  font-family: 'lintsec', Courier, monospace;
 }
 /*carousel portada*/
 
@@ -35,6 +39,7 @@
 
 .imgCarousel1 {
   font-size: 60px;
+  font-family: 'lintsec', Courier, monospace;
 }
 .animate__lightSpeedInRight {
   animation-duration: 4s;
@@ -42,8 +47,9 @@
 /*Artistas*/
 
 .cardArti{
-  background-color: white;
-  color: black;
+  background-color: rgb(104, 103, 103);
+  color: white;
+  box-shadow: 1px 5px 20px rgb(104, 103, 103);
 }
 .cardArti img{
   height: 350px;
@@ -53,12 +59,13 @@
 
 .serviShanei{
   height: 700px;
-  
 }
 .serviShanei img{
   max-width: 30%;
   height: 350px;
-  border: 1px solid black;
+  border: 1px solid white;
+  box-shadow: 1px 5px 20px rgb(104, 103, 103);
+  
 }
 .imgServi {
   display: flex;
@@ -68,9 +75,15 @@
  display: flex;
  justify-content: center;
  font-size: 30px;
- 
-}
 
+}
+.linkServi a {
+ color: white;
+ text-decoration: none;
+ font-family: 'Lintsec', Courier, monospace;
+
+}
+ 
 /* nosotros */
 
 .nosoShanei{
@@ -106,11 +119,17 @@ justify-content: center;
 align-items: center;
 font-size: 20px;
 color: white;
+transition: transform 0.1s ease-in-out;
+}
+.nosEstudio:hover{
+  transform: scale(1.3);
+  box-shadow: 20px 30px 28px black;;
+  border: 1px solid black;
 }
 .nosParrafo {
-  background-color: #000;
   max-width: 700px;
   color: white;
+  font-size: 15px;
 }
 
 /* Nuestros trabajos */
@@ -139,16 +158,15 @@ color: white;
   padding: 50px;
   color: white;
 }
-
-.imgEstilo {
-  height: 600px;
-  
+.imgEstilo img{
+ background-size: cover;
+ height: 650px;
 }
-
 .textEstilo{
-  background-color: #000;
+  background:url(imagenes/fondoGris.jpg);
   display: flex;
   align-items: center;
+  border-left:10px solid white;
 }
 /* preguntas frecuentes */
 
