@@ -166,12 +166,20 @@ transition: transform 0.1s ease-in-out;
   background:url(imagenes/fondoGris.jpg);
   display: flex;
   align-items: center;
-  border-left:10px solid white;
 }
 /* preguntas frecuentes */
+
+.pregFre{
+  background-color: #000;
+}
 
 .tituPreg {
   text-align: center;
   background-color: #000;
   color: white;
+}
+.acorPreg {
+  background-color: #313030;
+  color: white;
+  font-size: 20px;
 }
