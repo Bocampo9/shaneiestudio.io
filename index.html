@@ -18,6 +18,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Raleway:wght@100;300;400;600;700;900&display=swap" rel="stylesheet">
+
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -30,7 +32,7 @@
 <body>
   <header>
     <section class="bgBlack">
-      <nav class="navbar navbar-expand-lg ">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid fw-bolder">
           <a class="titulo navbar-brand link-light fs-1 mx-5 animate__animated animate__backInRight" href="#">Shanei
             Tattoo</a>
@@ -179,55 +181,61 @@
 
     </section>
     <section class="serviShanei p-1" id="servi">
-      <h3 class="text-center fs-1 fs-italic fw-bold m-5" style="color: #eeeaea;">Servicios</h3>
-      <h6 class="text-center fs-6 text-decoration-underline"> SHANEI TATTOO ESTUDIO</h6>
-      <div class="imgServi">
-        <img src="imagenes/tattoo.servi.jpg" class="m-4" alt="" srcset="">
-        <img src="imagenes/piercing.png" class="m-4" alt="" srcset="">
-      </div>
-      <div class="linkServi">
-        <a href="#" onclick="openModal('tattos', event)">Tattos</a>
-        <a href="#" onclick="openModal('piercing', event)">Piercing</a>
-      </div>
-      <div id="modal-tattos" class="modal">
-        <div class="modal-content">
-          <span class="modal-close" onclick="closeModal('modal-tattos')">&times;</span>
-          <h3 style="color: black;">Tattos</h3>
-          <div class="modal-imagenes">
-            <!-- Coloca aquí las 10 fotos para Tattos -->
-            <img src="imagenes/tattos/DSC03427.JPG" alt="Tatto 1">
-            <img src="imagenes/tattos/DSC03441.JPG" alt="Tatto 2">
-            <img src="imagenes/tattos/DSC03492.JPG" alt="Tatto 3">
-            <img src="imagenes/tattos/IMG-20230102-WA0049.jpg" alt="Tatto 4">
-            <img src="imagenes/tattos/IMG-20230104-WA0043.jpg" alt="Tatto 5">
-            <img src="imagenes/tattos/IMG_20221030_125621304.jpg" alt="Tatto 6">
-            <img src="imagenes/tattos/IMG_20221103_144757990.jpg" alt="Tatto 7">
-            <img src="imagenes/tattos/WhatsApp Image 2023-01-03 at 14.51.33 (1).jpeg" alt="Tatto 8">
+      <h2>Servicios</h2>
+      <div class="servi-modal">
+        <div class="imgServi">
+          <img src="imagenes/tattoo.servi.jpg" class="m-4" alt="" srcset="">
+          <div class="linkServi">
+            <button onclick="openModal('tattos', event)">Tattos</button>
+          </div>
+        </div>
+  
+        <div class="imgServi">
+          <img src="imagenes/piercing.png" class="m-4" alt="" srcset="">
+          <div class="linkServi">
+            <button onclick="openModal('piercing', event)">Piercing</button>
+          </div>
+        </div>
+  
+        <div id="modal-tattos" class="modal">
+          <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal-tattos')">&times;</span>
+            <h3 style="color: black;">Tattos</h3>
+            <div class="modal-imagenes">
+              <!-- Coloca aquí las 10 fotos para Tattos -->
+              <img src="imagenes/tattos/DSC03427.JPG" alt="Tatto 1">
+              <img src="imagenes/tattos/DSC03441.JPG" alt="Tatto 2">
+              <img src="imagenes/tattos/DSC03492.JPG" alt="Tatto 3">
+              <img src="imagenes/tattos/IMG-20230102-WA0049.jpg" alt="Tatto 4">
+              <img src="imagenes/tattos/IMG-20230104-WA0043.jpg" alt="Tatto 5">
+              <img src="imagenes/tattos/IMG_20221030_125621304.jpg" alt="Tatto 6">
+              <img src="imagenes/tattos/IMG_20221103_144757990.jpg" alt="Tatto 7">
+              <img src="imagenes/tattos/WhatsApp Image 2023-01-03 at 14.51.33 (1).jpeg" alt="Tatto 8">
+            </div>
+          </div>
+        </div>
+  
+        <!-- Modal para Piercing -->
+        <div id="modal-piercing" class="modal">
+          <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal-piercing')">&times;</span>
+            <h3 style="color: black;">Piercing</h3>
+            <!-- Coloca aquí las 10 fotos para Piercing -->
+            <div class="modal-imagenes">
+              <!-- Coloca aquí las 10 fotos para Tattos -->
+              <img src="imagenes/tattos/DSC03427.JPG" alt="Tatto 1">
+              <img src="imagenes/tattos/DSC03441.JPG" alt="Tatto 2">
+              <img src="imagenes/tattos/DSC03492.JPG" alt="Tatto 3">
+              <img src="imagenes/tattos/IMG-20230102-WA0049.jpg" alt="Tatto 4">
+              <img src="imagenes/tattos/IMG-20230104-WA0043.jpg" alt="Tatto 5">
+              <img src="imagenes/tattos/IMG_20221030_125621304.jpg" alt="Tatto 6">
+              <img src="imagenes/tattos/IMG_20221103_144757990.jpg" alt="Tatto 7">
+              <img src="imagenes/tattos/WhatsApp Image 2023-01-03 at 14.51.33 (1).jpeg" alt="Tatto 8">
+            </div>
           </div>
         </div>
       </div>
-
-      <!-- Modal para Piercing -->
-      <div id="modal-piercing" class="modal">
-        <div class="modal-content">
-          <span class="modal-close" onclick="closeModal('modal-piercing')">&times;</span>
-          <h3 style="color: black;">Piercing</h3>
-          <!-- Coloca aquí las 10 fotos para Piercing -->
-          <div class="modal-imagenes">
-            <!-- Coloca aquí las 10 fotos para Tattos -->
-            <img src="imagenes/tattos/DSC03427.JPG" alt="Tatto 1">
-            <img src="imagenes/tattos/DSC03441.JPG" alt="Tatto 2">
-            <img src="imagenes/tattos/DSC03492.JPG" alt="Tatto 3">
-            <img src="imagenes/tattos/IMG-20230102-WA0049.jpg" alt="Tatto 4">
-            <img src="imagenes/tattos/IMG-20230104-WA0043.jpg" alt="Tatto 5">
-            <img src="imagenes/tattos/IMG_20221030_125621304.jpg" alt="Tatto 6">
-            <img src="imagenes/tattos/IMG_20221103_144757990.jpg" alt="Tatto 7">
-            <img src="imagenes/tattos/WhatsApp Image 2023-01-03 at 14.51.33 (1).jpeg" alt="Tatto 8">
-          </div>
-        </div>
-      </div>
-
-
+      
     </section>
     <section class="nosoShanei" id="noso">
       <div class="texShanei">
@@ -261,7 +269,7 @@
     <section id="galeria">
       <div class="tattooArtis">
         <div class="tatuadores">
-          <h4>Nuestros Trabajos</h4>
+          <h3>Nuestros Trabajos</h3>
           <div class="botones">
             <button type="button" class="btn btn-outline-dark" onclick="mostrarImagenes('todos')">Todos</button>
             <button type="button" class="btn btn-outline-dark" onclick="mostrarImagenes('nahuel')">Nahuel</button>
@@ -389,11 +397,52 @@
       </div>
     </section>
     <section id="ubicacion">
+      <h3>UBICACION</h3>
       <div id="map"></div>
+    </section>
+    <section id="contacto">
+      <div class="contacto">
+        <h3><i class="fa-brands fa-whatsapp"></i> WHATSAPP</h3>
+        <h4>1155556555</h4>
+        <h3><i class="fa-solid fa-map-location-dot"></i> UBICACION</h3>
+        <h4>Marsella 2225, Banfield</h4>
+        <h4><i class="fa-regular fa-envelope"></i> shaneitattoo@gmail.com</h4>
+        <h3><i class="fa-regular fa-clock"></i> Horarios</h3>
+        <h4>Lunes a viernes 9hs a 21hs</h4>
+        <h4>Sabado 10hs a 20hs</h4>
+        <h4>Domingo y feriados Cerrado</h4>
+      </div>
+      <div class="formulario">
+        <form>
+          <h3>CONTACTANOS</h3>
+          <div class="mb-3">
+            <label for="nombre" class="form-label"></label>
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="telefono" class="form-label"></label>
+            <input type="tel" class="form-control" id="telefono" placeholder="Telefono" name="telefono" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="email" class="form-label"></label>
+            <input type="email" class="form-control" id="email" placeholder="E-mail" name="email" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="descripcion" class="form-label"></label>
+            <textarea class="form-control" id="descripcion" placeholder="Detalle" name="descripcion" rows="4" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-dark">Enviar</button>
+        </form>
+          
+      </div>
     </section>
   </main>
   <footer>
-
+<h3>Producido por Braian Ocampo</h3>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
