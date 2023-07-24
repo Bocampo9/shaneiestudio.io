@@ -741,6 +741,7 @@ align-items: center;
 .whatsapp-link:hover .whatsapp-logo{
   color: #eeeaea;
 }
+
 @media (max-width: 768px) {
 
   /* Responsive Nav */
@@ -749,7 +750,7 @@ align-items: center;
     padding: 4px 0px;
   }
   #navbar a {
-    margin: 0 10px;
+    margin: 0 7px;
 }
   .navbar a {
     border-bottom: 1px solid;
