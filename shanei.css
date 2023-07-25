@@ -1,10 +1,8 @@
-/*navar*/
 * {
   border: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 .titulo {
   font-family: 'Great Vibes', 'Arial Narrow', Arial, sans-serif;
@@ -14,7 +12,6 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #333;
   color: #fff;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.9);
@@ -37,12 +34,11 @@
 
 #navbar a {
   color: #eeeaea;
-  margin: 0 20px;
+  margin: 0 15px;
 }
 
 .menu-icon {
   display: none;
-  /* Inicialmente, el botón está oculto */
   background: none;
   border: none;
   font-size: 24px;
@@ -50,12 +46,10 @@
   cursor: pointer;
 }
 
-/*carousel portada*/
-
 .caroPortada img {
-  margin-top: 75px;
+
   width: 100%;
-  height: 700px;
+  height: 800px;
 }
 
 .carousel-control-next-icon,
@@ -64,9 +58,10 @@
   height: 3rem;
 }
 
-.carousel-item h5 {
+.carousel-item h2 {
   font-size: 30px;
   font-family: 'Sancreek', cursive;
+  color: #e03616;
 }
 
 .animate__lightSpeedInRight {
@@ -85,16 +80,12 @@
 .carousel-caption {
   position: absolute;
   bottom: 20px;
-  /* Ajusta la posición de la leyenda */
   left: 0;
   right: 0;
   z-index: 2;
   color: #fff;
-  /* Color del texto */
   text-align: center;
 }
-
-/*Artistas*/
 
 #artistas {
   width: 100%;
@@ -118,7 +109,6 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
   margin: 0 auto;
-
 }
 
 .blog-card {
@@ -127,19 +117,15 @@
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
   text-align: center;
-
-  &:hover {
-    .card-info {
-      opacity: 1;
-    }
-  }
+}
+.blog-card:hover .card-info{
+  opacity: 1;
 }
 
 #nahuel {
   background: url(imagenes/tigreArtista.png) no-repeat;
   background-size: cover;
   background-position: center;
-
 }
 
 #ayelen {
@@ -171,9 +157,9 @@
 
 .card-artistas h3 {
   font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #FFF;
+  font-weight: 300;
+  letter-spacing: 4px;
+  color: #e03616;
   font-family: 'Sancreek', cursive;
 }
 
@@ -204,8 +190,6 @@
   transition: bottom 0.5s, opacity 0.5s;
 }
 
-
-/* Servicios */
 .serviShanei h2 {
   margin: 50px 0;
   font-family: 'Notable', sans-serif;
@@ -215,8 +199,8 @@
 }
 
 .servi-modal {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   width: 80%;
   margin: 0 auto;
 }
@@ -233,13 +217,12 @@
 }
 
 .serviShanei img {
-  max-width: 100%;
+  width: 285px; 
   height: 350px;
   box-shadow: 1px 5px 20px rgb(104, 103, 103);
   transition: transform 0.3s;
   margin: 0 auto;
   border-radius: 15px;
-
 }
 
 .linkServi {
@@ -251,12 +234,14 @@
 }
 
 .linkServi button {
-  font-size: 30px;
+  font-size: 40px;
   font-family: 'Sancreek', cursive;
   margin: 20px;
   background: none;
   font-weight: 300;
   letter-spacing: 10px;
+  color: #e03616;
+  text-shadow: 4px 4px 8px #000000;
 }
 
 .serviShanei img:hover {
@@ -267,7 +252,6 @@
   display: block;
 }
 
-/* Estilos para el modal */
 .modal {
   display: none;
   position: fixed;
@@ -289,8 +273,8 @@
 }
 
 .modal-content {
-  width: 80%;
-  max-height: auto;
+  width: 70%;
+  height: auto;
   overflow: auto;
   background: #fff;
   padding: 20px;
@@ -317,7 +301,7 @@
 }
 
 .modal-close:hover {
-  color: red;
+  color: #e03616;
 }
 
 .modal-content img {
@@ -328,10 +312,6 @@
   transition: transform 0.3s;
   border-radius: 15px;
 }
-
-
-
-/* nosotros */
 
 .nosoShanei {
   background-color: #1a1919;
@@ -355,7 +335,7 @@
 .texShanei {
   margin: 0 auto;
   width: 80%;
-  height: 600px;
+  height: auto;
   border: 1px solid white;
   display: flex;
   justify-content: space-around;
@@ -365,6 +345,7 @@
 
 .texShanei iframe {
   height: 500px;
+  padding: 20px 0;
 }
 
 .nosParrafo {
@@ -376,8 +357,6 @@
 .nosParrafo p {
   font-size: 15px;
 }
-
-/* Nuestros trabajos */
 
 #galeria {
   display: flex;
@@ -408,11 +387,23 @@
   display: flex;
   justify-content: space-evenly;
 }
-
+.btn-red {
+  background-color: #e03616;
+  border-radius: 15px;
+  padding: 10px 30px;
+  color: #eeeaea;
+  letter-spacing: 3px;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.btn-red:hover {
+  color: #000;
+  background-color: #a0270f;
+}
 
 .grid-gallery {
   display: grid;
-  grid-auto-rows: 200px;
+  grid-auto-rows: 300px;
   gap: 1rem;
   grid-auto-flow: row dense;
 
@@ -421,7 +412,6 @@
 @media all and (min-width: 320px) {
   .grid-gallery {
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 150px;
   }
 }
 
@@ -433,7 +423,7 @@
 
 @media all and (min-width: 1024px) {
   .grid-gallery {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
@@ -477,10 +467,6 @@
   background-color: black;
 }
 
-
-
-/* Estilos */
-
 .estilo {
   background-color: #1a1919;
 }
@@ -510,6 +496,7 @@
 .flip:hover .back {
   opacity: 1;
   transform: rotateY(0deg);
+  color: #e03616;
 }
 
 .flip .front {
@@ -586,7 +573,6 @@
 }
 
 a {
-  color: #e03616;
   text-decoration: none
 }
 
@@ -633,17 +619,18 @@ a {
 
 .accordion-contant {
   padding: 15px;
-  background-color: #dce3e7(55, 138, 159, 0.521);
+  background-color: #dce3e7;
   display: none;
 }
-.accordion-contant p{
+
+.accordion-contant p {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
+
 .accordion-titel h3 span {
   float: right;
 }
 
-/* mapa */
 #ubicacion {
   background-color: #1a1919;
   padding: 50px 0;
@@ -667,7 +654,6 @@ a {
   margin: 0 auto;
 }
 
-/* formulario */
 #contacto {
   display: flex;
   background: rgb(26, 25, 25);
@@ -686,7 +672,7 @@ a {
   letter-spacing: 2px;
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   padding: 8px;
-  color: #eeeaea;
+  color: #e03616;
 }
 
 .contacto h4 {
@@ -703,7 +689,7 @@ a {
 .formulario h3 {
   font-size: 22px;
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
-  color: #eeeaea;
+  color: #e03616;
 }
 
 footer {
@@ -734,24 +720,86 @@ footer h3 {
   justify-content: center;
   text-decoration: none;
 }
+
 .whatsapp-logo {
-font-size: 35px;
-align-items: center;
+  font-size: 35px;
+  align-items: center;
 }
-.whatsapp-link:hover .whatsapp-logo{
+
+.whatsapp-link:hover .whatsapp-logo {
   color: #eeeaea;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
 
-  /* Responsive Nav */
+  .navbar {
+    display: block;
+  }
+  #navbar a {
+    color: #eeeaea;
+    margin: 0 5px;
+  }
+  #navbar {
+    align-items: baseline;
+    padding-top: 9px;
+  }
+  .nav-center {
+    font-size: 12px;
+  }
+.blog-card {
+  height: 300px;
+}
+.card-info {
+  padding: 0 30px;
+}
+.card-artistas h3 {
+  font-size: 20px;
+}
+.card-artistas hr {
+  width: 73px;
+  margin: 12px auto;
+}
+.intro {
+  font-size: 9px;
+  line-height: 8px;
+}
+.serviShanei img {
+  width: 200px;
+  height: 285px;
+}
+.linkServi button {
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.serviShanei {
+  height: 515px;
+}
+.nosParrafo {
+  font-size: 11px;
+}
+.texShanei iframe {
+  height: 350px;
+}
+.nosoShanei {
+  padding-bottom: 30px;
+}
+.btn-red {
+  padding: 7px 22px;
+  margin: 0 10px;
+}
+}
+
+
+@media (max-width: 768px) {
   #navbar {
     justify-content: initial;
     padding: 4px 0px;
   }
+
   #navbar a {
     margin: 0 7px;
-}
+  }
+
   .navbar a {
     border-bottom: 1px solid;
   }
@@ -779,18 +827,19 @@ align-items: center;
     justify-content: space-around;
     align-items: baseline;
   }
+
   .nav-center {
     font-size: 10px;
     padding: 10px;
     padding: 2px 13px;
   }
 
-
   .caroPortada img {
-    margin-top: 54px;
-    height: 259px;
+    height: 400px;
   }
-  .carousel-control-next-icon, .carousel-control-prev-icon {
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
     width: 1rem;
     height: 1rem;
   }
@@ -806,6 +855,9 @@ align-items: center;
 
   .blog-card {
     height: 250px;
+  }
+  .card-info {
+    padding: 0 30px;
   }
 
   .card-artistas h3 {
@@ -885,65 +937,92 @@ align-items: center;
     font-size: 20px;
   }
 
-  .btn.btn-outline-dark {
+  .btn-red {
+    background-color: #e03616;
+    border-radius: 15px;
+    padding: 6px 10px;
+    color: #eeeaea;
+    letter-spacing: 0px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: normal;
     font-size: 10px;
-    margin: 0 6px;
+    margin: 0 5px;
+  }
+  .grid-gallery {
+    grid-auto-rows: 150px;
   }
   .tituEstilo {
     padding: 25px;
   }
+
   .tituEstilo h3 {
     font-size: 20px;
   }
+
   .flip h2 {
     font-size: 12px;
   }
+
   .flip p {
     padding-top: 6px;
-    font-size: 10px;
+    font-size: 9px;
   }
-  .flip .front, .flip .back {
+
+  .flip .front,
+  .flip .back {
     height: 250px;
     padding: 5px 12px;
   }
+
   .pregFre h2 {
     padding: 25px 0;
     font-size: 17px;
   }
+
   .pregFre h3 {
     font-size: 10px;
   }
+
   .accordion-contant p {
     font-size: 10px;
   }
+
   #ubicacion {
     padding: 0;
   }
+
   #ubicacion h3 {
     padding: 25px 0;
     font-size: 20px;
   }
+
   #map {
     height: 200px;
   }
+
   #contacto {
     padding-top: 20px;
   }
+
   .contacto h3 {
     font-size: 10px;
     letter-spacing: 1px;
     padding: 2px;
   }
+
   .contacto h4 {
     font-size: 9px;
     padding: 6PX;
   }
+
   .formulario h3 {
     font-size: 14px;
   }
+
   .form-control::placeholder {
     font-size: 11px;
   }
+
   footer h3 {
     padding: 10px;
     font-size: 11px;
